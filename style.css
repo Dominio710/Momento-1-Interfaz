@@ -1,0 +1,261 @@
+/* RESET Y ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f3f3f3;
+    color: #000;
+  }
+  
+  /* ENCABEZADO Y NAVEGACIÓN */
+  header {
+    background-color: #FF9800;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .nav-links li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* SECCIÓN HERO */
+  .hero {
+    background-color: #FF9800;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .hero-content button {
+    background-color: #F57C00;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-content button:hover {
+    background-color: #E65100;
+  }
+  
+  /* SECCIÓN DE SOLUCIONES */
+  .solutions {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .solutions h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .solution-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .solution-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .solution-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .solution-card h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .solution-card p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  
+  .solution-card button {
+    background-color: #FF9800;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  .solution-card button:hover {
+    background-color: #F57C00;
+  }
+  
+  /* PIE DE PÁGINA */
+  footer {
+    background-color: #FFE0B2;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #eaeaea;
+  }
+  
+  .footer-links {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FF9800;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* CHATBOT */
+  .chatbot-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 2px solid #FF9800;
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .chatbot-header {
+    background-color: #FF9800;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #fff;
+  }
+  
+  .chatbot-body {
+    padding: 10px;
+    flex: 1;
+    overflow-y: auto;
+    color: #000;
+    background-color: #fff;
+  }
+  
+  /* Estilos para los mensajes del chatbot */
+  .chatbot-message {
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    max-width: 80%;
+    word-wrap: break-word;
+    font-size: 14px;
+  }
+  
+  .chatbot-message.tu {
+    background-color: #FFE0B2;
+    align-self: flex-end;
+    text-align: right;
+  }
+  
+  .chatbot-message.dropbot {
+    background-color: #FFCC80;
+    align-self: flex-start;
+    text-align: left;
+  }
+  
+  .chatbot-footer {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .chatbot-footer input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .chatbot-footer button {
+    background-color: #FF9800;
+    border: none;
+    margin-left: 5px;
+    padding: 0 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  /* BOTÓN FLOTANTE DEL CHATBOT */
+  .chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF9800;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chatbot-button img {
+    width: 36px;
+    height: 36px;
+  }
+  
